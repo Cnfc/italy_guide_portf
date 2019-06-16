@@ -52,8 +52,18 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="main">
-        {this.showlinks(this.state.page)}
+      <div className="header">
+        <div className="container">
+          <div className='left'>
+            Some IN+MG
+          </div>
+          <div className='right'>
+            <div className="cart_link">
+              
+            {this.showlinks(this.state.page)}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

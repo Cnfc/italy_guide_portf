@@ -3,7 +3,7 @@ import './Home.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="page_container">
       <header className="App-header">
         It`s heroku learning big project start
       </header>
