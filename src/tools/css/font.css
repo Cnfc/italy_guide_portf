@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: 'Olicana Rough';
+  src: url('../fonts/Olicana-Rough.eot');
+  src: url('../fonts/Olicana-Rough.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Olicana-Rough.woff') format('woff'),
+  url('../fonts/Olicana-Rough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }

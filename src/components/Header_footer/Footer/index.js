@@ -10,7 +10,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer className='bck_b_dark'>
+      <footer className='bck_b_dark dark'>
         <div className='container'>
           <div className="logo">
             Houses

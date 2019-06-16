@@ -52,7 +52,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         {this.showlinks(this.state.page)}
       </div>
     );
