@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import Header from '../components/Header_footer/Header';
 import Footer from '../components/Header_footer/Footer';
+import SideDrawer from '../components/Header_footer/Header/SideDrawer';
+import BackDrop from '../components/Header_footer/Header/BackDrop';
 
 class Layout extends Component {
 
@@ -9,7 +11,9 @@ class Layout extends Component {
     return (
       <div>
           <Header />
-        <div className='page_container'>
+          <SideDrawer />
+          <BackDrop />
+        <div className='container'>
           {this.props.children}
         </div>
           <Footer />

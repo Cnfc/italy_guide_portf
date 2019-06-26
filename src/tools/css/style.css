@@ -1,8 +1,15 @@
 @import url('font.css');
 @import url('core.css');
 
+html{
+  height: 100%;
+}
+
 body {
   font-family: Olicana Rough;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -12,6 +19,9 @@ body {
 .page_container {
   min-height: 75vh;
 }
+.main{
+  margin-top: 65px;
+}
 .link_default {
   text-transform: uppercase;
   padding: 10px;
@@ -20,26 +30,54 @@ body {
   margin-top: 10px;
 }
 
+
 .header {
-  font-size: 1.5rem;
-  padding: 15px;
-  position: fixed;
-  z-index: 2;
   width: 100%;
-  border-bottom: 1px solid white;
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  height:  56px;
+  font-size: 2rem;
 }
-header .container .left{
-  width: 250px;
+.header_navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
-header .container .right{
- flex-grow: 1;
- border-left: 1px solid #eeeeee;
- border-right: 1px solid #eeeeee;
+.header_logo{
+  color: blue;
+  text-decoration: none;
 }
-header .cart_link {
-  display: inline-block;
-  position: relative;
+
+.header_navigation-items{
+  color: blue;
+  font-size: 2rem;
+}
+.header_navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header_navigation-items a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+
+.header_spacer {
+  flex:1;
+}
+
+.header__logo {
+  margin-left: 1rem;
+}
+
+.header_navigation-items a:hover{
+  text-decoration: underline;
+}
+
+.header_navigation-items a:active{
+  color: red;
 }

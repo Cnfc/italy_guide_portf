@@ -4,9 +4,9 @@ import './Home.css';
 function App() {
   return (
     <div className="page_container">
-      <header className="App-header">
+      <main className="main">
         It`s heroku learning big project start
-      </header>
+      </main>
     </div>
   );
 }
