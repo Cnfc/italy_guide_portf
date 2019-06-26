@@ -3,10 +3,9 @@ import React from 'react';
 import './BackDrop.css';
 
 const BackDrop = (props) => {
+  console.log(props);
   return (
-    <div className='backdrop'> 
-      BackDrop
-    </div>
+    <div className='backdrop' onClick={props.clickToClose} />
   )
 };
 
