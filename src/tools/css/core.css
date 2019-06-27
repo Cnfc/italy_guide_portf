@@ -1,3 +1,12 @@
-body {
-  font-family: "Olicana-Rough"
-} 
+:root {
+  --small: 324px;
+  --medium: 720px;
+  --large: 1440px;
+
+  --white: #ffffff;
+  --fadedWhite: #f9f9f9;
+  --lightGray: #eaeaea;
+  --mediumGray: #bebebe;
+  --darkGray: #afafaf;
+
+}

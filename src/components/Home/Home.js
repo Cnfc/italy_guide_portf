@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Home.css';
+import HeroContent from '../Hero-content';
 
-function App() {
-  return (
+class Home extends Component {
+
+  render() {
+    return (
+      
     <div className="page_container">
-      <main className="main">
-        It`s heroku learning big project start
-      </main>
+      <HeroContent />
+      
     </div>
-  );
+    );
+  }
 }
 
-export default App;
+export default Home;
