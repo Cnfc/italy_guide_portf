@@ -1,0 +1,50 @@
+
+footer {
+  width: 1280px;
+  height: 56px;
+  background-color: #ececec;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+.footer_p {
+  width: 600px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #616161;
+  margin-right: 10px;
+}
+
+.footer_mail {
+  width: 100px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: -0.3px;
+  color: #0084b6;
+  margin-right: 115px;
+}
+.footer_contacts {
+  width: 66px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #616161;
+  /* margin-left: auto; */
+}

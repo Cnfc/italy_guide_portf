@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 
 import * as actions from 'actions';
 
-
-import DropDox from 'components/DropDox/DropDox';
-
+import Logo from 'components/Header/Logo';
+import Nav from 'components/Header/Nav';
 import './Header.css'
+import logoPerson from 'tools/header_logo.svg';
 
 
 
@@ -18,18 +18,30 @@ class Header extends Component {
     if(this.props.auth){
       return (
         <div>
-          <img src="components/tools/header_logo"/>
-          <button>Выход</button>
+          <img className="user-circle" src={logoPerson} alt="logo Person"/>
+          <button 
+            className='MCB-3' 
+            onClick={() => this.props.isAuth(false)}>
+              Выход
+          </button>
           
         </div>
       );
     } else {
       return (
         <div>
-          <input>Log in</input>
-          <input>Pass</input>
-          <button>Sigh In</button>
-          <button>Registration</button>
+          <input type="text" placeholder="Логин" className='GS-3' />
+          <input type="pass" placeholder="Пароль" className='GS-3'/>
+          <button 
+            className='MCB-3' 
+            onClick={() => this.props.isAuth(true)}>
+              <span className="-Label">ВХОД</span>
+          </button>
+
+          <button 
+            className='Blue-3 Rectangle-R4'>
+             <span className="-Label_res">РЕГИСТРАЦИЯ</span>
+          </button>
         </div>
       )
     }
@@ -37,9 +49,7 @@ class Header extends Component {
 
   renderHeader() {
     return (
-     <ul>
-      <li>{this.renderButton()}</li>
-    </ul>
+      this.renderButton()      
     );
   }
 
@@ -47,9 +57,10 @@ class Header extends Component {
         
     return (
       <header className="header">
-       {this.renderHeader()}
-
-
+        <Logo />
+        <Nav />
+        <div className="spacer"></div>
+        <span>{this.renderHeader()}</span>
       </header>
     );
   }
