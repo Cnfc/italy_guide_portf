@@ -1,20 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import Routes from './Routes';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route } from 'react-router-dom';
 
+import Root from 'Root';
+import Layout from './HOC/Layout';
+import App from 'components/App/App';
 
 import './tools/css/style.css';
 import './tools/css/font.css';
 
+
 ReactDOM.render(
-  <BrowserRouter >
-    <Routes />
-  </BrowserRouter>,
+  <Root>
+      <BrowserRouter >
+        <Route path='/' component={App} />
+      </BrowserRouter>
+  </Root>,
   document.getElementById('root')
 );
 
 
 
-serviceWorker.unregister();
+

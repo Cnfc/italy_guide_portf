@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-class NewsFeed extends Component {
+class Content extends Component {
 
   render() {
     return (
       <div>
-        NewsFeed
+        Content
       </div>
     );
   }
 }
 
-export default NewsFeed;
+export default Content;

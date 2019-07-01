@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import './Home.css';
-import HeroContent from './Hero-content';
-import NewsFeed from './NewsFeed';
 
 class Home extends Component {
 
@@ -9,8 +7,7 @@ class Home extends Component {
     return (
       
     <div className="page_container">
-      <HeroContent />
-      <NewsFeed />
+      page_conetest
       
     </div>
     );

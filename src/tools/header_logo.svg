@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>15767FBD-9D08-466C-86EB-A43C4E67D69A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M8,0 C3.58170968,0 0,3.58170968 0,8 C0,12.4182903 3.58170968,16 8,16 C12.4182903,16 16,12.4182903 16,8 C16,3.58170968 12.4182903,0 8,0 Z M4.38709677,6.4516129 C4.38709677,4.45625806 6.00464516,2.83870968 8,2.83870968 C9.99535484,2.83870968 11.6129032,4.45625806 11.6129032,6.4516129 C11.6129032,8.44696774 9.99535484,10.0645161 8,10.0645161 C6.00464516,10.0645161 4.38709677,8.44696774 4.38709677,6.4516129 Z M13.0454194,12.0213871 C10.4536129,15.2604516 5.54945161,15.2642903 2.95454839,12.0213871 C3.51622581,11.4507419 4.29735484,11.0967742 5.16129032,11.0967742 L5.74851613,11.0967742 C7.16883871,11.7850323 8.829,11.7860645 10.2514839,11.0967742 L10.8387097,11.0967742 C11.7026452,11.0967742 12.4837742,11.4507419 13.0454194,12.0213871 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Atoms/Icons/user-circle">
+            <g id="user-circle">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="1.-Atoms/Fills/Solid/DarkGrey" mask="url(#mask-2)" fill="#516173">
+                    <rect id="DarkGrey" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
