@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 
-import Header from 'components/Header'
 import Content from 'components/Content'
-import Footer from 'components/Footer'
 import ContForm from 'components/ContForm';
 
 
-
 class App extends Component {
-
+ 
   render() {
     return (
       <div className="_1280x800_">
@@ -19,5 +17,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;

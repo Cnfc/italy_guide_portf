@@ -16,7 +16,7 @@ ReactDOM.render(
     <Layout>
       <BrowserRouter >
         <Route path='/' exact component={App} />
-        <Route path='/Analize' component={Analize} />
+        <Route path="/analize" component={Analize} />
       </BrowserRouter>
     </Layout>
   </Root>,

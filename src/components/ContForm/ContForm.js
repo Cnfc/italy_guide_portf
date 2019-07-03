@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+
+import App from 'components/App/App';
+import Analize from 'components/Analize';
+
 
 
 import './ContForm.css';
@@ -22,7 +26,11 @@ class ContForm extends Component {
       } else {
         return (
           <div className="contForm">
-            <button className="contForm_button"><Link to="/Analize">Начать работу</Link></button> 
+          <Link to="/analize">
+            <button className="contForm_button"> Начать работу
+            </button>
+          </Link>
+            
           </div>
         )
     }
@@ -32,6 +40,9 @@ class ContForm extends Component {
     return (
       <div>
         {this.renderInvitationMessage()}
+
+        
+       
       </div>
     );
   }
