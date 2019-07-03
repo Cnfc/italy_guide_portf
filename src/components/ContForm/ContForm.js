@@ -40,9 +40,6 @@ class ContForm extends Component {
     return (
       <div>
         {this.renderInvitationMessage()}
-
-        
-       
       </div>
     );
   }

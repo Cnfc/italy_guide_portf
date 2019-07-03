@@ -9,9 +9,9 @@ import './Analize.css';
 const AnalizHeader = (props) => {
   return (
     <div className='analize_header'> 
-        <img className="" src={logoPerson} alt="logo Person"/>
-        <h1>Анализ  флюорограмм</h1>
-        <img className="" src={logo} alt="logo Person"/>
+        <img className="analize_header_logo_man" src={logoPerson} alt="logo Person"/>
+        <h1 className='analize_text'>Анализ  флюорограмм</h1>
+        <img className="analize_header_logo" src={logo} alt="logo Med"/>
     </div>
   )
 };
