@@ -17,32 +17,35 @@ class Header extends Component {
   renderButton () {
     if(this.props.auth){
       return (
-        <div>
-          <img className="user-circle" src={logoPerson} alt="logo Person"/>
+        <React.Fragment>
+          <span className="">
+          <img className="header_ser-circle header_ser-circle_gray" src={logoPerson} alt="logo Person"/>
+
+          </span>
           <button 
-            className='MCB-3' 
+            className='header_button header_button_ex' 
             onClick={() => this.props.isAuth(false)}>
               Выход
           </button>
           
-        </div>
+        </React.Fragment>
       );
     } else {
       return (
-        <div>
-          <input type="text" placeholder="Логин" className='GS-3' />
-          <input type="pass" placeholder="Пароль" className='GS-3'/>
+        <React.Fragment>
+          <input type="text" placeholder="Логин" className='header_login' />
+          <input type="pass" placeholder="Пароль" className='header_login'/>
           <button 
-            className='MCB-3' 
+            className='header_button' 
             onClick={() => this.props.isAuth(true)}>
               <span className="-Label">ВХОД</span>
           </button>
 
           <button 
-            className='Blue-3 Rectangle-R4'>
-             <span className="-Label_res">РЕГИСТРАЦИЯ</span>
+            className='header_button header_button_reg'>
+             <span className="header_button  ">РЕГИСТРАЦИЯ</span>
           </button>
-        </div>
+        </React.Fragment>
       )
     }
   }
@@ -60,7 +63,7 @@ class Header extends Component {
         <Logo />
         <Nav />
         <div className="spacer"></div>
-        <span>{this.renderHeader()}</span>
+        <React.Fragment>{this.renderHeader()}</React.Fragment>
       </header>
     );
   }

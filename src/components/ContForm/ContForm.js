@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 
 import './ContForm.css';
@@ -9,21 +10,37 @@ class ContForm extends Component {
   }
 
   renderInvitationMessage () {
-    if(this.state.me) {
-      <p>LLLLL</p>
-    } else {
-      <p>ssssss</p>
+    if(!this.props.auth) {
+      return (
+        <div className="contForm">
+          <p className="contForm_Parag">
+          Если вы хотите воспользоваться приложением, вам нужно войти или зарегистрироваться
+          </p>
+        </div>
+      ) 
+      } else {
+        return (
+          <div className="contForm">
+            <button className="contForm_button"><p>Начать работу</p></button> 
+          </div>
+        )
     }
   }
 
   render() {
     return (
       <div>
-        {console.log(this.state)}
         {this.renderInvitationMessage()}
       </div>
     );
   }
 }
 
-export default ContForm;
+
+function mapStateToProps( state ) {
+  return {
+    auth: state.auth
+  }
+}
+
+export default connect(mapStateToProps)(ContForm);
