@@ -13,13 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="_1280x800_">
-        <Header />
-
         <Content />
-        
         <ContForm />
-
-        <Footer />
       </div>
     );
   }

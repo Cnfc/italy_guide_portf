@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 
@@ -21,7 +22,7 @@ class ContForm extends Component {
       } else {
         return (
           <div className="contForm">
-            <button className="contForm_button"><p>Начать работу</p></button> 
+            <button className="contForm_button"><Link to="/Analize">Начать работу</Link></button> 
           </div>
         )
     }

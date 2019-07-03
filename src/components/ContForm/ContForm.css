@@ -27,7 +27,7 @@
   background-color: #00aef2;
 }
 
-.contForm_button > p {
+.contForm_button > a {
   margin-top: 7px;
   height: 16px;
   font-family: Montserrat;
@@ -38,5 +38,6 @@
   line-height: normal;
   letter-spacing: -0.3px;
   text-align: center;
+  text-decoration: none;
   color: #ffffff;
 }
