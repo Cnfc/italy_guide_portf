@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Header from 'components/Header'
 import Content from 'components/Content'
 import Footer from 'components/Footer'
+import ContForm from 'components/ContForm';
 
 
 
@@ -15,6 +16,8 @@ class App extends Component {
         <Header />
 
         <Content />
+        
+        <ContForm />
 
         <Footer />
       </div>

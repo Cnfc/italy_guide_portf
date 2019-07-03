@@ -1,0 +1,63 @@
+.right_devblock {
+  width: 224px;
+  height: 348px;
+  border-radius: 4px;
+  border: solid 1px #cbeffd;
+  background-color: #f7fafc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right_devblock_header {
+  width: 224px;
+  height: 32px;
+  background-color: rgba(203, 239, 253, 0.6);
+}
+.right_devblock_headername {
+  width: 100%;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #00aeef;
+  text-align: center;
+}
+.right_devblock_logo {
+  width: 150px;
+  height: 116.8px;
+  margin: 15px 15px;
+  /* background-color: #51acdd; */
+}
+
+.right_devblock_contact {
+  width: 209px;
+  height: 17px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.28px;
+  text-align: center;
+  color: #616161;
+}
+
+.right_devblock_email {
+  width: 151px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: -0.3px;
+  color: #0084b6;
+}

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+}
+
+.left_content{
+  width: 416px;
+  height: 517px;
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo_man {
+  width: 192px;
+  height: 208px;
+  object-fit: contain;
+  margin: 33px 27px 0 0;
+ 
+}
+
+.main {
+  width: 608px;
+  height: 517px;
+  background-color: #f7fafc;
+}
+
+.main_header {
+  width: 568px;
+  height: 68px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  letter-spacing: -0.64px;
+  color: #00aeef;
+}
+
+.main_desc {
+  width: 568px;
+  height: 408px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: -0.4px;
+  color: #212121;
+  overflow: auto;
+  overflow-y: scroll;
+}

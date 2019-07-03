@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-class DropDox extends Component {
+class Raiting extends Component {
 
   render() {
     return (
       <div>
-        DropDox
+        Raiting
       </div>
     );
   }
 }
 
-export default DropDox;
+export default Raiting;
