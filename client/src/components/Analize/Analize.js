@@ -9,10 +9,10 @@ class Analize extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <AnalizHeader />
         <MainZone />
-      </div>
+      </React.Fragment>
     );
   }
 }
