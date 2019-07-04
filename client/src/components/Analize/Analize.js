@@ -17,4 +17,4 @@ class Analize extends Component {
   }
 }
 
-export default Analize;
+export default requireAuth(Analize);
