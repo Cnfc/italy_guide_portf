@@ -20,7 +20,14 @@ cloudinary.config({
 
 app.use(cors({ 
   origin: CLIENT_ORIGIN 
-})) 
+}))
+
+
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
+
+
 
 app.post('/api/users/uploadimage', formidable(), (req,res) => {
   cloudinary.uploader.upload(req.files.file.path, (result) => {
@@ -37,9 +44,11 @@ app.post('/api/users/uploadimage', formidable(), (req,res) => {
 
 
 
-app.listen(process.env.PORT || 7778, () => console.log('👍'))
+const port = process.env.PORT = 7778;
 
-
+app.listen(port, ()=> {
+  console.log(`My Server running at ${port}`);
+});
 
 
 
