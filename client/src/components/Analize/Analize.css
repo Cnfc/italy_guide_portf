@@ -1,45 +1,68 @@
+.analize_container {
+  flex-direction: column;
+}
 .analize_header {
-  width:  100%;
   display: flex;
   margin: 1rem;
   justify-content: center;
   align-items: center;
 }
+
 .analize_header_logo_man{
-  width: 143px;
+  flex: 1;
   height: 154px;
   object-fit: contain;
   margin: 1rem;
 }
-.analize_text {
-  margin: 0 280px 0 100px;
+.analize_header_text {
+  flex: 2;
+  margin: 30px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: -0.86px;
+  color: #00aeef;
 }
 
 .analize_header_logo{
-  width: 108px;
+  flex: 1;
   height: 84px;
+  margin-left: 100px;
 }
 
 /* Main Zone */
 
 /* DropZone */
-
+.analize_upload_area {
+  display: flex;
+  flex-direction: row; /* Элементы внутри контейнера будут позиционироваться горизонтально */
+  align-items: stretch;
+}
 .dropzone {
   border: 1px solid #e5e5e5;
   margin-bottom: 40px;
   width: 976px;
   height: 448px;
-  
 }
 
 .dropzone_box {
   float: left;
   width: 50%;
-  height: 448px;
+  height: 556px;
   padding: 10px;
   box-sizing: border-box;
 }
-
+.analize_cloud_favicon {
+  color: lightgray;
+  width: 82.5px;
+  height: 61.3px;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 2em;
+}
 .dropzone_box  .wrap {
   background: #eaeaea;
   height: 100%;
@@ -47,7 +70,80 @@
   padding-top: 31px;
   box-sizing: border-box;
   font-size: 49px;
-  background-size: contain !important;
-  background-position: center center !important;
   border: 1px solid #eaeaea;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.analize_drop_header {
+  width: 284px;
+  height: 33px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #546c76;
+  margin: 15px;
+}
+
+.analize_drop_button {
+  width: 284px;
+  height: 32px;
+  background-color: #879da8;
+  border-radius: 4px;
+
+}
+
+.analize_upload_area {
+  
+}
+
+.analize_buttons_area {
+  height: 448px;
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analize_button {
+  width: 132px;
+  height: 32px;
+  opacity: 0.5;
+  background-color: #00aef2;
+}
+
+.analize_text {
+
+  width: 103.4px;
+  height: 18px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+}
+.analize_drop_loading_text {
+  width: 386px;
+  height: 66px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.32px;
+  text-align: center;
+  color: #546c76
 }

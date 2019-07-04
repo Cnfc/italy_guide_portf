@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Spinner from './Spinner'
 import Images from './Images'
 import Buttons from './Buttons'
-import { API_URL } from './config';
 
 import FileUpload from './FileUpload';
 
@@ -36,12 +35,12 @@ class MainZone extends Component {
 
     render () {     
     return (
-      <section className="upload_buttons">
+      <section className="analize_upload_area">
 
         <FileUpload 
           imagesHandler={(images) => this.imagesHandler(images )}
         />  
-        <button>Обработать</button>
+        
       </section>
     );
   }
