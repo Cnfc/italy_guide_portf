@@ -9,63 +9,39 @@ import FileUpload from './FileUpload';
 class MainZone extends Component {
 
   state = {
-    uploading: false,
-    images: []
+    formdata: {
+      images: {
+        value: '',
+        validation: {
+          required: false,
+        },
+        valid: true,
+        validationmessage: ''
+      }
+    }
   };
 
-  onChange = e => {
-    const files = Array.from(e.target.files);
+  imagesHandler = (images) => {
+    const newFormData = {
+      ...this.state.formdata
+    }
+
+    newFormData['images'].value = images;
+    newFormData['images'].valid = true;
+
     this.setState({
-      uploading: true
-    })
-    const formData = new FormData();
-
-    files.forEach((file, i) => {
-      formData.append(i, files)
-    })
-
-    fetch(`${API_URL}/image-upload`, {
-      method: 'POST',
-      body: formData
-    })
-    .then(res => res.json())
-    .then(images => {
-      this.setState({
-        uploading: false, 
-        images
-      });
-    })
-  };
-
-  removeImage = id => {
-    this.setState({
-      images: this.state.images.filter(image => image.public_id !== id)
+      formdata: newFormData
     })
   }
 
-    render () {
-      const { uploading, images } = this.state;
-      
-      const content = () => {
-        switch(true) {
-          case uploading:
-            return <Spinner />
-          case images.length>0:
-            return <Images images={images} removeImage={this.removeImage} />
-          default: 
-            return <Buttons onChange={this.onChange} />
-        }
-      } 
+    render () {     
     return (
       <section className="upload_buttons">
-        {/* { content() } */}
 
         <FileUpload 
           imagesHandler={(images) => this.imagesHandler(images )}
-        />
-        
+        />  
         <button>Обработать</button>
-
       </section>
     );
   }
