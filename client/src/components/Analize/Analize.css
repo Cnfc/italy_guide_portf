@@ -1,0 +1,53 @@
+.analize_header {
+  width:  100%;
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.analize_header_logo_man{
+  width: 143px;
+  height: 154px;
+  object-fit: contain;
+  margin: 1rem;
+}
+.analize_text {
+  margin: 0 280px 0 100px;
+}
+
+.analize_header_logo{
+  width: 108px;
+  height: 84px;
+}
+
+/* Main Zone */
+
+/* DropZone */
+
+.dropzone {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 40px;
+  width: 976px;
+  height: 448px;
+  
+}
+
+.dropzone_box {
+  float: left;
+  width: 50%;
+  height: 448px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dropzone_box  .wrap {
+  background: #eaeaea;
+  height: 100%;
+  text-align: center;
+  padding-top: 31px;
+  box-sizing: border-box;
+  font-size: 49px;
+  background-size: contain !important;
+  background-position: center center !important;
+  border: 1px solid #eaeaea;
+}
