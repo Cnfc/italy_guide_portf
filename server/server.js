@@ -43,7 +43,7 @@ app.post('/api/users/upload_image', formidable(), (req, res) => {
 })
 
 
-const port = process.env.PORT = 3002;
+const port = process.env.PORT || 3002;
 
 app.listen(port, ()=> {
   console.log(`My Server running at ${port}`);
