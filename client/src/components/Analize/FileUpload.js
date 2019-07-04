@@ -26,7 +26,7 @@ class FileUpload extends Component {
 
     formData.append('file', files[0]);
 
-    axios.post('http://localhost:7778/api/users/uploadimage', formData, config)
+    axios.post('http://localhost:8080/api/users/uploadimage', formData, config)
       .then(response => { 
       console.log(response.data)
 
